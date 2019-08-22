@@ -1,0 +1,22 @@
+{
+  "name": "mocha-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=text mocha --require @babel/register",
+    "test:reporter": "nyc --reporter=lcov --reporter=text mocha --require @babel/register --reporter=mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "mochawesome": "^4.1.0",
+    "nyc": "^14.1.1"
+  }
+}
